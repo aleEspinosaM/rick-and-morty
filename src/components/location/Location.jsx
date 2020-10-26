@@ -12,6 +12,7 @@ const Location = () => {
   const dispatch = useContextDispatch();
   useEffect(() => {
     fetchLocation()
+    // eslint-disable-next-line
   }, [locationId]);
     const fetchLocation = async () => {
     try {

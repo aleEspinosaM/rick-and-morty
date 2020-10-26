@@ -14,6 +14,7 @@ export const getCharactersSuccess = (data) => ({type: GET_CHARACTERS_SUCCESS, pa
 export const getLocationFailed = (error) => ({type: GET_LOCATION_FAILED, payload: error});
 export const getLocationSuccess = (data) => ({type: GET_LOCATION_SUCCESS, payload: {...data}});
 export const setPage = (url = '') => {
+  // eslint-disable-next-line
   const [_, page] = url.split('page=') || [];
   return {
     type: SET_PAGE,

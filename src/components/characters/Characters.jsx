@@ -16,6 +16,7 @@ const Characters = () => {
   useEffect(() => {
     window.scrollTo(0,0);
     fetchData(url);
+    // eslint-disable-next-line
   }, [url]);
 
   const dispatch = useContextDispatch();

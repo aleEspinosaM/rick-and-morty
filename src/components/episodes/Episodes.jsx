@@ -11,6 +11,7 @@ export default function Episodes() {
   useEffect(() => {
     const foundChar = characters.find(c => c.id === +characterId)
     setEpisodes(foundChar?.episode)
+    // eslint-disable-next-line
   }, [])
   
   return (
